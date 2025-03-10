@@ -21,6 +21,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME  }}
           password: ${{  secrets.DOCKER_PASSWORD }}
 
+      - name: Debug - List frontend directory contents
+        run: ls -la frontend
+
       - name: Build and Push Backend
         uses: docker/build-push-action@v4
         with:
