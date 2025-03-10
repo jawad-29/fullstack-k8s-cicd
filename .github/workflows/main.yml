@@ -26,11 +26,11 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: jawad-29/backend:v1
+          tags: jawad23/backend:v1
 
       - name: Build and Push Frontend
         uses: docker/build-push-action@v4
         with:
           context: ./frontend
           push: true
-          tags: jawad-29/frontend:v1
+          tags: jawad23/frontend:v1
